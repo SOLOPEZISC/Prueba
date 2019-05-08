@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" (click)="permitsFunction()">Permits</a>
+  <a class="navbar-brand" href="#" (click)="profilesFunction()">Profiles</a>
+  <a class="navbar-brand" href="#" (click)="usersFunction()">User</a>
+  <div class="collapse navbar-collapse float-right"></div>
+  <div class="float-right"> <a class="navbar-brand" href="#" (click)="close()">Close</a></div>
+</nav>
+
+<div class="container mt-4">
+<ng-container *ngIf="viewpermits else second">
+  <app-permits></app-permits>
+</ng-container>
+<ng-template #second>
+  <ng-container *ngIf="viewprofiles else third">
+    <app-profiles></app-profiles>
+  </ng-container>
+</ng-template>
+<ng-template #third>
+  <app-users></app-users>
+</ng-template>
+</div>

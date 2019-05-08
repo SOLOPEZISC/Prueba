@@ -1,0 +1,7 @@
+nota:Para poder registrar un usuario se necesita agregar un registro en la tabla profiles mediante sql o en phpmyadmin
+
+Laravel version:Laravel Framework 5.8.15
+Angular version:7.2.14
+
+
+Saludos!!!
